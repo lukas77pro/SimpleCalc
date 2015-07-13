@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1">
+
+	<test name="Acceptance" parallel="false">
+		<classes>
+			<class name="com.comarch.training.PositiveCases" />
+		</classes>
+
+	</test>
+
+	<test name="CheckingCriticalFailures">
+		<classes>
+			<class name="com.comarch.training.FailingCases" />
+		</classes>
+	</test>
+
+
+
+	<test name="UnitLevel">
+		<classes>
+			<class name="com.comarch.training.FailingCases" />
+		</classes>
+	</test>
+
+
+
+	<test name="AcceptanceLevel">
+		<classes>
+			<class
+				name="com.comarch.training.FailingCases" />
+		</classes>
+	</test>
+
+
+	<test name="IntegrationLevel">
+		<classes>
+			<class
+				name="com.comarch.training.FailingCases" />
+		</classes>
+	</test>
+
+
+</suite>
